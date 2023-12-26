@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BioTechStream Wesbite</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+  google.charts.load('current', { 'packages': ['corechart'] });
+  google.charts.setOnLoadCallback(drawChart);
+
+  function drawChart() {
+
+    var data = google.visualization.arrayToDataTable([
+      ['TYPE OF CARDIAC DISEASE', 'DEATH RATE PER 100,000 PEOPLE'],
+      ['Total Cardiovascular Diseases', 217.9],
+      ['Coronary Heart Diseases', 90.5],
+      ['Heart Attack', 26.3],
+      ['Cardiac Dysrhythmia', 9.1],
+      ['Atrial Fibrillation', 2],
+      ['Heart Failure', 94.7],
+      ['High Blood Pressure', 138]
+    ]);
+
+    var options = {
+      title: 'DEATHRATE OF CARDIAC DISEASES'
+    };
+
+    var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+    chart.draw(data, options, style = "align-items:center;");
+  }
+</script>
+
+<body>
+  <header>
+    <a href="#" class="logo">BIO TECH STREAM<span>.</span></a>
+
+    <nav class="navbar">
+      <a href="#home"> HOME </a>
+      <a href="#about"> ABOUT </a>
+      <a href="#blogs"> BLOGS</a>
+      <a href="#diseaseAnalysis"> DISEASE ANALYSIS </a>
+      <a href="#review"> NEWS & STOCKS </a>
+      <a href="#contact"> CONTACT </a>
+    </nav>
+  </header>
+
+  <section class="home" id="home">
+    <div class="container">
+      <img src="lightblueImage.avif" />
+    </div>
+    <div class="content">
+      <h3>BioTech Stream</h3>
+      <span> Explore Biotechnologies & Computer Sciences </span>
+      <p>
+        Displays live news and stocks data about various different
+        biotechnology and computer science related companies. Uses data
+        analysis to analyze different diseases and provide useful information
+        about them. Additionally, we also post blogs on our website written by
+        high schoolers! You are also free to write a blog on the fields of
+        biotechnology or computer sciences.
+      </p>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="imageContent"></div>
+    <div class="content">
+      <h3>Who are we...</h3>
+      <p>
+        We are Tanya Sanghavi and Sri GM, two high school seniors dedicated to
+        exploring the fields of biotechnology and computer science. Through
+        this website, we aspire to provide useful information about disease
+        analysis, educational blogs about biotechnology and computer science,
+        and live data on news and stocks.
+      </p>
+    </div>
+    <div class="container">
+      <img src="twoFrndImg.jpg" />
+    </div>
+  </section>
+
+  <section class="blogs" id="blogs" style="padding:50px;">
+    <div class="header">
+      <h2>RECENT BLOGS</h2>
+    </div>
+
+    <div class="row">
+      <div class="leftcolumn">
+        <div class="card">
+          <h2 style="font-size: 3rem;">NEW LIFE THROUGH SOFTBOTICS</h2>
+          <h5 style="color:gray;">Dec 24, 2023 <br> CREDITS:
+            https://engineering.cmu.edu/news-events/news/2023/11/02-mxene-backbone.html
+            https://astrobiology.com/2023/11/450-million-year-old-organism-finds-new-life-in-softbotics.html </h5>
+          <div class="fakeimg" style="width: 100%; height: 200px;">
+            <img src="softboticsimage.png" style="width:100%; margin-top:20px; margin-bottom:20px">
+          </div>
+          <p style="font-size:2rem;">In a research conducted by the Department of Mechanical Engineering at Carnegie
+            Mellon University, the researchers studied the fossil of a marine organism called "Pleurocystitids" that is
+            450 Million years old. Not only did they study it, but they also used Robotics and Biotechnology to build a
+            soft botic replica of the organism. The researchers intend to use softbotics (using flexible electronics and
+            soft materials to build a robot), to understand the movements and the design of the organisms that existed
+            even before the existence of humans. They have also created a new field of study called "PaleoBionics"
+            through which researchers are going to examine the fossils and remains of animals that existed before the
+            human era. Through this, they would like to study the evolution and the bio-mechanical factors responsible
+            for evolution.</p>
+        </div>
+      </div>
+      <div class="rightcolumn">
+        <div class="card">
+          <h2 style="font-size: 3rem;">NEW LIFE THROUGH SOFTBOTICS</h2>
+          <h5 style="color:gray;">Dec 24, 2023 <br> CREDITS:
+            https://engineering.cmu.edu/news-events/news/2023/11/02-mxene-backbone.html
+            https://astrobiology.com/2023/11/450-million-year-old-organism-finds-new-life-in-softbotics.html </h5>
+          <div class="fakeimg" style="width: 100%; height: 200px;">
+            <img src="softboticsimage.png" style="width:100%; margin-top:20px; margin-bottom:20px">
+          </div>
+          <p style="font-size:2rem;">In a research conducted by the Department of Mechanical Engineering at Carnegie
+            Mellon University, the researchers studied the fossil of a marine organism called "Pleurocystitids" that is
+            450 Million years old. Not only did they study it, but they also used Robotics and Biotechnology to build a
+            soft botic replica of the organism. The researchers intend to use softbotics (using flexible electronics and
+            soft materials to build a robot), to understand the movements and the design of the organisms that existed
+            even before the existence of humans. They have also created a new field of study called "PaleoBionics"
+            through which researchers are going to examine the fossils and remains of animals that existed before the
+            human era. Through this, they would like to study the evolution and the bio-mechanical factors responsible
+            for evolution.</p>
+        </div>
+      </div>
+  </section>
+
+  <section class="clickMore" id="clickMore" style=" width: 100%; height: 100%; box-sizing: border-box; background-color: rgb(164, 215, 250);">
+    <div class="readmore" id="readmore">
+      <a href=blogs.html>
+        <h4 style="color:black;">CLICK HERE TO READ MORE BLOGS</h4>
+      </a>
+    </div>
+  </section>
+
+  <section class="diseaseAnalysis" id="diseaseAnalysis" style="background-color:#c7c7c9; box-sizing: content-box; padding:50px;">
+
+    <div class="header">
+      <h5>DEATHRATE ANALYSIS OF THE TEN MOST COMMON DISEASES</h5>
+    </div>
+    <div style="border:2px solid black;">
+      <div id="piechart" style="width: 600px; height: 350px; justify-content: center; padding:20px;"></div>
+      <p style="font-size:2.5rem; padding:20px; align-content: center;">
+        The graph depicts the deathrate of various types of cardiac diseases. Cardiovascular diseases being the leading
+        cause of death globally, are disorders that are based on the damage of heart and blood vessels.
+      </p>
+    </div>
+    </div>
+
+ </section>
+
+ <section class="clickMore" id="clickMore" style=" width: 100%; height: 100%; box-sizing: border-box; background-color: #c7c7c9;">
+  <div class="readmore" id="readmore">
+    <a href=dataAnalysis.html>
+      <h5 style="color:black; background-color: rgb(164, 215, 250); padding:20px;">CLICK HERE TO VIEW MORE DATA ANALYSIS</h5>
+    </a>
+  </div>
+</section>
+
+
+
+
+
+</body>
+
+</html>

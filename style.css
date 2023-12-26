@@ -1,0 +1,238 @@
+:root {
+    --grey: #c7c7c9;
+    --textcolor: rgba(0, 0, 0, .1);
+    --lightblue: rgb(164, 215, 250);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+.heading {
+    text-align: center;
+    font-size: 4rem;
+    color: black;
+    padding: 1rem;
+    margin: 2rem 0;
+    background: var(--lightblue);
+}
+
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #a0a0a2;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+header .logo {
+    font-size: 3rem;
+    color: #201f1f;
+    font-weight: bolder;
+}
+
+header .logo span {
+    color: rgb(164, 215, 250);
+}
+
+header .navbar a {
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: #201f;
+}
+
+header .navbar a:hover {
+    color: #201f1f;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(164, 215, 250);
+    background-size: cover;
+}
+
+
+.home .content {
+    max-width: 50rem;
+}
+
+
+.home .content h3 {
+    font-size: 6rem;
+    color: #201f;
+}
+
+
+.home .content span {
+    font-size: 3.5rem;
+    color: #201f;
+    padding: 0;
+    line-height: 1.5;
+}
+
+
+.home .content p {
+    font-size: 1.5rem;
+    color: #201f;
+    padding: 1rem 0;
+    line-height: 1.5;
+    float: right;
+}
+
+
+.home {
+    background-position: left;
+}
+
+.home .content h3 {
+    font-size: 5rem;
+}
+
+.home .content span {
+    font-size: 2.5rem;
+}
+
+.container {
+    margin: 100px auto;
+    width: 75%;
+}
+
+img {
+    max-width: 700px;
+    float: left;
+}
+
+
+.about {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--grey);
+    background-size: cover;
+}
+
+
+.about .content {
+    margin-right: 150px;
+    max-width: 50rem;
+}
+
+
+.about .content h3 {
+    font-size: 6rem;
+    color: #201f;
+}
+
+.about .content p {
+    font-size: 1.5rem;
+    color: #201f;
+    padding: 1rem 0;
+    line-height: 1.5;
+    float: right;
+}
+
+
+.about {
+    background-position: right;
+}
+
+.about .content h3 {
+    font-size: 5rem;
+}
+
+.blogs {
+    box-sizing: border-box;
+}
+
+.blogs {
+    font-family: Arial;
+    padding: 20px;
+    background: var(--lightblue);
+}
+.diseaseAnalysis {
+    box-sizing: content-box;
+    font-family: Tahoma;
+    padding: 20px;
+    background: var(--grey);
+}
+
+/* Header/Blog Title */
+.header {
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+    float: left;
+    width: 50%;
+}
+
+/* Right column */
+.rightcolumn {
+    float: left;
+    width: 50%;
+    padding-left: 20px;
+}
+
+/* Fake image */
+.blogs .leftcolumn .fakeimg .img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Add a card effect for articles */
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.readmore {
+    padding: 20px;
+    font-size: 1.5rem;
+    color: var(--textcolor);
+    text-align: center;
+    box-sizing: border-box;
+    background: var(--grey);
+    margin-right: 450px;
+    margin-left: 450px;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BioTechStream Wesbite</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<script>
+
+'use strict';
+var request = require('request');
+
+// replace the "demo" apikey below with your own key from https://www.alphavantage.co/support/#api-key
+var url = 'https://www.alphavantage.co/query?function=NEWS_SENTIMENT&tickers=AAPL&apikey=IKXSQWI8QBUP0SKU';
+
+news_data = ""
+
+request.get({
+    url: url,
+    json: true,
+    headers: {'User-Agent': 'request'}
+  }, (err, res, data) => {
+    if (err) {
+      console.log('Error:', err);
+    } else if (res.statusCode !== 200) {
+      console.log('Status:', res.statusCode);
+    } else {
+      // data is successfully parsed as a JSON object:
+      console.log(data);
+      news_data = data;
+    }
+});
+
+</script>
+<body>
+  <header>
+    <a href="#" class="logo">BIO TECH STREAM<span>.</span></a>
+
+    <nav class="navbar">
+      <a href="#home"> HOME </a>
+      <a href="#about"> ABOUT </a>
+      <a href="#blogs"> BLOGS</a>
+      <a href="#diseaseAnalysis"> DISEASE ANALYSIS </a>
+      <a href="stocks.html"> NEWS & STOCKS </a>
+      <a href="#contact"> CONTACT </a>
+    </nav>
+  </header>
+
+  <section class="home" id="home">
+    <div class="news">
+      <h3>Stock News</h3>
+      <li>
+        <script>print(news_data)</script>  
+      </li>
+      <li>
+        Displays live news and stocks data about various different
+        biotechnology and computer science related companies. Uses data
+        analysis to analyze different diseases and provide useful information
+        about them. Additionally, we also post blogs on our website written by
+        high schoolers! You are also free to write a blog on the fields of
+        biotechnology or computer sciences.
+      </li>
+      <li>
+        Displays live news and stocks data about various different
+        biotechnology and computer science related companies. Uses data
+        analysis to analyze different diseases and provide useful information
+        about them. Additionally, we also post blogs on our website written by
+        high schoolers! You are also free to write a blog on the fields of
+        biotechnology or computer sciences.
+      </li>
+
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="imageContent"></div>
+    <div class="content">
+      <h3>Who are we...</h3>
+      <p>
+        We are Tanya Sanghavi and Sri GM, two high school seniors dedicated to
+        exploring the fields of biotechnology and computer science. Through
+        this website, we aspire to provide useful information about disease
+        analysis, educational blogs about biotechnology and computer science,
+        and live data on news and stocks.
+      </p>
+    </div>
+    <div class="container">
+      <img src="twoFrndImg.jpg" />
+    </div>
+  </section>
+
+
+</body>
+
+</html>

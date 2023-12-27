@@ -84,6 +84,38 @@ header .navbar a:hover {
     max-width: 50rem;
 }
 
+.home .news {
+    max-width: 100%;
+    align-items: left;
+}
+
+.home .news h3 {
+    font-size: 6rem;
+    color: #201f;
+}
+
+.home .news span {
+    font-size: 3.5rem;
+    color: #201f;
+    padding: 0;
+    line-height: 1.5;
+}
+
+.home .news p {
+    font-size: 1.5rem;
+    color: #201f;
+    padding: 1rem 0;
+    line-height: 1.5;
+    float: right;
+}
+
+.home .news li {
+    font-size: 1.5rem;
+    color: #201f;
+    padding: 1rem 0;
+    line-height: 1.5;
+    float: right;
+}
 
 .home .content h3 {
     font-size: 6rem;
